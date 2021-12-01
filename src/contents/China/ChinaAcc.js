@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import Graph from './ChinaGraph';
 
 const Acc = () => {
     const [acc,setAcc]=useState([{
@@ -15,7 +16,7 @@ const Acc = () => {
 
     useEffect(()=>{
         const fetchEvent = () =>{
-            fetch("https://api.covid19api.com/total/dayone/country/kr")
+            fetch("https://api.covid19api.com/total/dayone/country/CN")
             .then(res=>res.json())
             .then(data=>setAcc(data));
         }
@@ -27,6 +28,7 @@ const Acc = () => {
   
     
     return(
+        <div>
         <table className="Acc">
             <thead>
                 <tr>
@@ -44,6 +46,8 @@ const Acc = () => {
             </tr>
             </tbody>
         </table>
+        <Graph/>
+        </div>
     )
 }
 

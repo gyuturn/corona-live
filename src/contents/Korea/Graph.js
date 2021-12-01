@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import useDidMountEffect from "./useDidMountEffect";
+import useDidMountEffect from "../useDidMountEffect";
 import {Bar,Doughnut, Line} from "react-chartjs-2"
 import Chart from 'chart.js/auto';
 import axios from 'axios'
@@ -35,7 +35,7 @@ const Graph = () => {
               ]
   });
 
-    console.log(today);
+
   
 
    
@@ -52,7 +52,7 @@ const Graph = () => {
               console.log(data);
               makeData(data);
             });
-
+          
             
             
             const makeData = (items) =>{
@@ -117,7 +117,7 @@ const Graph = () => {
             const date=today[i].Date;
             week.push({todayComfirmed,date});
             }
-            console.log(week);
+         
             setWeekConfiremd(week);
 
             var date=[];
@@ -147,6 +147,21 @@ const Graph = () => {
         setWeek();
     },[today])
 
+   const selectArrow=(item) =>{
+      const compare=document.getElementById("compareYesterday");
+      if(compare==null)
+      return;
+     if(item>=0){
+       compare.innerText=item+"↑";
+     }
+     else{
+       compare.innerText=item+"↓";
+       compare.style.background="#eff2ff";
+       compare.style.color="#5673EB"
+     }
+   }
+   
+
     return(
       <div>
       <div id="todaystatic">
@@ -155,22 +170,24 @@ const Graph = () => {
             <div id="todaynumber">{weekConfiremd[0].todayComfirmed}명</div>
           </div>
           <div id="comparelist">
-          <div class="compare">
+          <div className="compare">
             <span>vs 어제</span>
-            <span class="comparenumber">{weekConfiremd[0].todayComfirmed-weekConfiremd[1].todayComfirmed}↑</span>
+            <span id="compareYesterday" className="comparenumber">{selectArrow(
+              weekConfiremd[0].todayComfirmed-weekConfiremd[1].todayComfirmed)
+            }</span>
           </div>
-          <div class="compare">
+          <div className="compare">
             <span>vs 1주일전</span>
-            <span class="comparenumber">{weekConfiremd[0].todayComfirmed-weekConfiremd[7].todayComfirmed}↑</span>
+            <span className="comparenumber">{weekConfiremd[0].todayComfirmed-weekConfiremd[7].todayComfirmed}↑</span>
           </div>
           </div>
       </div>
-        <div class="graph">
+        <div className="graph">
           <Line
           data={graphToday}
           />
           </div>
-          <div class="graph">
+          <div className="graph">
           <Bar 
                 data={confirmedData}
           />

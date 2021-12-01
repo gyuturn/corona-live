@@ -1,7 +1,8 @@
 .header {
+  position: fixed;
   border: 1px solid rgba(70, 77, 82, 0.082);
   border-radius: 16px;
-  width: 700px;
+  width: 300px;
   margin: 30px auto;
   display: flex;
   justify-content: center;
@@ -10,20 +11,32 @@
   background-color: white;
   font-family: Georgia, Serif;
 }
+.nav {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 12rem;
+  background-color: white;
+  border: 1px solid rgba(70, 77, 82, 0.082);
+  border-radius: 16px;
+}
 #live {
   color: steelblue;
 }
 
 #country {
-  list-style: none;
+  list-style-type: none;
+
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 #country .nation {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 20px 50px;
   font-weight: 120;
   font-weight: bold;
   font-family: Georgia, Serif;
@@ -96,4 +109,8 @@ body {
 }
 td {
   padding-left: 45px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
