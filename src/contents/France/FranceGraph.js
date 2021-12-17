@@ -45,7 +45,7 @@ const Graph = () => {
        
     useEffect(()=>{
         const fetchEvent = () =>{
-            fetch("https://api.covid19api.com/total/dayone/country/CN")
+            fetch("https://api.covid19api.com/total/dayone/country/FR")
             .then(res=>res.json())
             .then(data=>{
               setToday(data)

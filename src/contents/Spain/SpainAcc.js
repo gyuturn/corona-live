@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import Graph from './ChinaGraph';
+import Graph from './SpainGraph';
 
 const Acc = () => {
     const [acc,setAcc]=useState([{
@@ -16,13 +16,13 @@ const Acc = () => {
 
     useEffect(()=>{
         const fetchEvent = () =>{
-            fetch("https://api.covid19api.com/total/dayone/country/CN")
+            fetch("https://api.covid19api.com/total/dayone/country/ES")
             .then(res=>res.json())
             .then(data=>setAcc(data));
         }
         fetchEvent();
        
-        
+        console.log(acc);
         
     },[])
   
