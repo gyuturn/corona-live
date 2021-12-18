@@ -1,9 +1,8 @@
 .header {
-  position: fixed;
   border: 1px solid rgba(70, 77, 82, 0.082);
   border-radius: 16px;
-  width: 300px;
-  margin: 5rem 15rem;
+  width: 700px;
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -12,12 +11,12 @@
   font-family: Georgia, Serif;
 }
 .nav {
-  width: 300px;
+  width: 200px;
   display: flex;
-  margin: 20px 15rem;
   justify-content: center;
   position: fixed;
-  top: 12rem;
+  top: 5rem;
+  right:3rem;
   background-color: white;
   border: 1px solid rgba(70, 77, 82, 0.082);
   border-radius: 16px;
@@ -28,19 +27,28 @@
 
 #country {
   list-style-type: none;
-
+  width:100%;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0;
+  margin:0 0;
+  border-radius: 16px;
 }
 
 #country .nation {
-  margin: 20px 50px;
+  border-radius: 16px;
+  height:4rem;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 120;
   font-weight: bold;
   font-family: Georgia, Serif;
+
 }
 
 .Acc {
@@ -115,3 +123,8 @@ a {
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width: 1240px) { 
+  .nav{display:none}  
+}
+

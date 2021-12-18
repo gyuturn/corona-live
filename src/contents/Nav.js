@@ -1,22 +1,22 @@
 import React from 'react'
 import { Link,useHistory } from "react-router-dom";
+import { useEffect, useState } from 'react'
 
 
 
 const Nav = () => {
- 
     
 
     return(
         <nav className="nav">
             <ul id="country">
-                <Link to="/"><li className="nation">국내</li></Link>
-                <Link to="/japan"><li className="nation">일본</li></Link>
-                <Link to="/spain"><li className="nation">스페인</li></Link>
-                <Link to="/germany"><li className="nation">독일</li></Link>
-                <Link to="/brazil"><li className="nation">브라질</li></Link>
-                <Link to="/france"><li className="nation">프랑스</li></Link>
-                <Link to="/portugal"><li className="nation">포르투갈</li></Link>
+                <Link to="/korea" className="nation" id="korea"><li >국내</li></Link>
+                <Link to="/japan" className="nation" id="japan"><li >일본</li></Link>
+                <Link to="/spain" className="nation" id="spain"><li>스페인</li></Link>
+                <Link to="/germany" className="nation" id="germany"><li >독일</li></Link>
+                <Link to="/brazil" className="nation" id="brazil"><li >브라질</li></Link>
+                <Link to="/france" className="nation"id="france"><li >프랑스</li></Link>
+                <Link to="/portugal" className="nation" id="portugal"><li >포르투갈</li></Link>
             </ul>
             
 

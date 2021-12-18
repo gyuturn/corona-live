@@ -19,6 +19,12 @@ const Acc = () => {
             fetch("https://api.covid19api.com/total/dayone/country/PT")
             .then(res=>res.json())
             .then(data=>setAcc(data));
+            const exceptPage=document.getElementsByClassName("nation");
+            for(let i=0;i<exceptPage.length;i++){
+                exceptPage[i].style.background="white";
+            }
+            const thisPage=document.getElementById(window.location.pathname.substr(1));
+            thisPage.style.background="#DCDCDC";
         }
         fetchEvent();
        

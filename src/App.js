@@ -23,11 +23,11 @@ function App() {
       <div className="App">
         <Header />
         <Nav />
-        <Btn />
+        {/* <Btn /> */}
         
       <Routes>
-        <Route  path="/"  element={<Acc/>}/>
-        <Route  path="/"  element={<Graph/>}/>
+        <Route  path="/korea"  element={<Acc/>}/>
+        <Route  path="/korea"  element={<Graph/>}/>
         <Route  path="/corona-live"  element={<Acc/>}/>
         <Route  path="/corona-live"  element={<Graph/>}/>
         <Route  path="/japan" element={ <JapanAcc/>}/>
