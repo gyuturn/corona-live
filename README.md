@@ -23,7 +23,7 @@ https://gyuturn.github.io/corona-live/
 
 #### 주간별 확진자 수
 <img src="https://user-images.githubusercontent.com/87477702/158559086-1857daa3-13fe-4fd7-8bd0-9dc5191a9039.PNG" width="60%"/>
-- 꺾은선 그래프로 7일간 확진자 수 추이를 알 수 있음
+-  꺾은선 그래프로 7일간 확진자 수 추이를 알 수 있음
 
 #### 누적 확진자 수
 <img src="https://user-images.githubusercontent.com/87477702/158559254-7f395b09-a8f4-46f7-a6a2-db1e986823ac.PNG" width="60%"/>
