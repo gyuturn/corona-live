@@ -17,14 +17,14 @@ https://gyuturn.github.io/corona-live/
 - 나라별 확진자 수도 알 수 있음
 
 #### 확진자 수
-<img src="https://user-images.githubusercontent.com/87477702/158558640-6e4a063c-f3ea-48b8-b5a5-480a25181ca5.PNG" width="40%"/>
+<img src="https://user-images.githubusercontent.com/87477702/158558640-6e4a063c-f3ea-48b8-b5a5-480a25181ca5.PNG" width="60%"/>
 - 당일 확진자 수를 나타냄
 - 어제 및 1주일 전으로 비교하여 나타냄
 
 #### 주간별 확진자 수
-<img src="https://user-images.githubusercontent.com/87477702/158559086-1857daa3-13fe-4fd7-8bd0-9dc5191a9039.PNG" width="40%"/>
+<img src="https://user-images.githubusercontent.com/87477702/158559086-1857daa3-13fe-4fd7-8bd0-9dc5191a9039.PNG" width="60%"/>
 - 꺾은선 그래프로 7일간 확진자 수 추이를 알 수 있음
 
 #### 누적 확진자 수
-<img src="https://user-images.githubusercontent.com/87477702/158559086-1857daa3-13fe-4fd7-8bd0-9dc5191a9039.PNG" width="40%"/>
+<img src="https://user-images.githubusercontent.com/87477702/158559254-7f395b09-a8f4-46f7-a6a2-db1e986823ac.PNG" width="60%"/>
 - 누적된 막대형 그래프로 현재까지 누적된 확진자 수를 알 수 있음
