@@ -4,7 +4,7 @@
 https://gyuturn.github.io/corona-live/
 
 ## Summary
-<img src="(https://user-images.githubusercontent.com/87477702/158557888-58a493ed-d89e-4b37-b801-a5111c60fbd2.PNG" width="60%">
+<img src="https://user-images.githubusercontent.com/87477702/158557888-58a493ed-d89e-4b37-b801-a5111c60fbd2.PNG" width="60%">
 
 ## About Project
 
